@@ -16,7 +16,7 @@ x.classList.toggle("change");
     height: 5px;
     background-color: #EB6459;
     margin: 7px 10;
-    /*    transition: 0.4s;*/
+
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -34,35 +34,32 @@ x.classList.toggle("change");
 .sidenav {
     height: 100%;
     width: 70px;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
     background-color: #111;
-    overflow-x: hidden;
     padding-top: 20px;
 }
 
-
-h1 {
-    margin:0px;
-    padding: 10;
+.special_h1 { 
     font-family: National;
-    margin-left: 80px;
     font-weight: bold;
     letter-spacing: 5px;
     color: #EB6459;
-    position: absolute;
-    top: 0px;
+    padding-right: 80px;
+    
+}
+
+
+
+h1 {
+    font-family: National;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #EB6459;
 }
 
 
 p { 
-    margin:0;
-    padding: 10;
     font-family: National;
-    width: 50%;
-    margin-left: 80px;
+/*    width: 50%;*/
     font-weight: normal;
     line-height: 20px
 }
@@ -92,4 +89,26 @@ img {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+p, div, h1, h2, h3, h4 {
+    border: 2px solid red ;
+}
+.grid_parent {
+    display: grid; 
+    grid-template-columns: 80px 1fr ;
+    padding: 20px ;
+}
+#body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px ;
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px; 
+    
+}
+.bottomrow {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
