@@ -1,75 +1,66 @@
-body { background: linear-gradient(to bottom, rgba(247,229,227,1) 48%,rgba(247,179,170,1) 99%); 
+@font-face { 
+    font-family:National; 
+    src: url(fonts/National-Regular.otf); 
+    font-weight: 400 ; 
 }
 
-/*
-function myFunction(x) {
-x.classList.toggle("change");
+body { 
+    background: linear-gradient(to bottom, rgba(247,229,227,1) 48%,rgba(247,179,170,1) 99%);
 }
-*/
+
 .container {
     display: inline-block;
     cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 30px;
+    height: 3px;
     background-color: #EB6459;
     margin: 7px 10;
-
-}
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-.change .bar2 {
-    opacity: 0;
 }
 
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-.sidenav {
+#sidenav {
     height: 100%;
     width: 70px;
-    background-color: #111;
+    background-color: black;
     padding-top: 20px;
+    grid-row-start: 1;
+    grid-row-end: 3 ;
+
 }
 
-.special_h1 { 
+h1.page_title, h1.nina {
     font-family: National;
-    font-weight: bold;
-    letter-spacing: 5px;
+    font-weight: 400 ;
     color: #EB6459;
-    padding-right: 80px;
-    
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    padding: 20px ;
 }
 
-
-
-h1 {
-    font-family: National;
-    font-weight: bold;
+h1.nina {
     letter-spacing: 5px;
-    color: #EB6459;
+    padding: 0 ;
 }
-
 
 p { 
     font-family: National;
-/*    width: 50%;*/
+    /*    width: 50%;*/
     font-weight: normal;
-    line-height: 20px
+    line-height: 20px ;
+}
+
+div.image_container {
+    text-align: center;
+     
 }
 
 img { 
-    margin-right: 80px;
     width: 50%;
-    float: right;
-
+    
 } 
+
 /* end about page */
 .bar {
     margin:0px;
@@ -89,26 +80,43 @@ img {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+    object-fit: cover;
+
 }
 
-p, div, h1, h2, h3, h4 {
-    border: 2px solid red ;
-}
-.grid_parent {
+
+
+#grid_parent {
     display: grid; 
     grid-template-columns: 80px 1fr ;
-    padding: 20px ;
+    /*    padding: 20px ;*/
 }
-#body {
+
+#thumbnail_grid {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px ;
     grid-column-gap: 20px; 
-    grid-row-gap: 20px; 
-    
+    grid-row-gap: 20px;  
 }
+
 .bottomrow {
-    background-color: green;
+/*
     grid-column-start: 1;
     grid-column-end: 4;
+*/
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+  
+ 
+}
+
+#thumbnail_grid img {
+    object-fit: cover;
+}
+
+
+
+p, div, h1, h2, h3, h4 {
+    border: 2px solid red ;
 }
