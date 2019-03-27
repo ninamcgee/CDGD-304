@@ -78,9 +78,10 @@ div.image_container {
 
 }
 
-img { 
-    width: 50%;
-
+.image_container img { 
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover ;
 } 
 
 /* end about page */
@@ -115,6 +116,7 @@ img {
     display: grid; 
     grid-template-columns: 1fr 1fr ; 
     grid-template-rows: 1fr ; 
+    grid-column-gap: 20px; 
 }
 
 .image_container {
@@ -125,7 +127,7 @@ img {
 #thumbnail_grid {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px ;
+    grid-template-rows: repeat(2, 300px) ; /* Only for 2 rows. */
     grid-column-gap: 20px; 
     grid-row-gap: 20px;  
 }
@@ -148,5 +150,5 @@ object-fit: cover;
 
 
 p, div, h1, h2, h3, h4 {
-    border: 2px solid red ;
+/*    border: 2px solid red ;*/
 }
