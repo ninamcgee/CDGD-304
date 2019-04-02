@@ -9,6 +9,7 @@ body {
     margin: 0; 
 }
 
+/*
 .container {
     display: inline-block;
     cursor: pointer;
@@ -25,19 +26,20 @@ body {
     height: 100%;
     width: 70px;
     background-color: black;
-    /*    padding-top: 20px;*/
+        padding-top: 20px;
     grid-row-start: 1;
     grid-row-end: 3 ;
 
 
 }
+*/
 
 h1.page_title {
     font-family: National;
     font-weight: 400 ;
     color: #EB6459;
-    grid-column-start: 2 ;
-    grid-column-end: 3;
+/*    grid-column-start: 2 ;*/
+/*    grid-column-end: 3;*/
     padding: 20px ;
 }
 
@@ -73,10 +75,6 @@ p {
     line-height: 20px ;
 }
 
-div.image_container {
-    /*    text-align: center;*/
-
-}
 
 .image_container img { 
     width: 100% ;
@@ -85,6 +83,7 @@ div.image_container {
 } 
 
 /* end about page */
+/*
 .bar {
     margin:0px;
     width: 100%;
@@ -92,12 +91,13 @@ div.image_container {
     background-color: #EB6459;
     margin: 50px 90;
 }
+*/
 
 .column {
     display: grid;
     grid-template-columns: 800px 800px 800px;
     grid-gap: 1px;
-    margin-left: 80px;
+/*    margin-left: 0px;*/
 }
 
 .column img {
@@ -109,7 +109,7 @@ div.image_container {
 
 #grid_parent {
     display: grid; 
-    grid-template-columns: 80px 1fr ;
+    grid-template-columns: 1fr ;
 }
 
 .bio_grid {
@@ -148,9 +148,9 @@ object-fit: cover;
 */
 
 
-/*
+
 
 p, div, h1, h2, h3, h4 {
-/*    border: 2px solid red ;*/
+    border: 2px solid red ;
 }
-*/
+
