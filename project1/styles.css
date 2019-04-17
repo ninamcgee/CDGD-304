@@ -84,7 +84,7 @@ h2.nina {
     font-weight: lighter;
     color: #EB6459;
     margin-top: 30px ;
-    margin-left: 240px;
+    margin-left: 220px;
     padding: 0 ;
     grid-column-start: 2 ;
     grid-column-end: 3 ;
@@ -120,6 +120,16 @@ h2.nina {
 
 }
 
+
+#mos{
+    width: 70%;
+    height: auto;
+    margin-left: 220px;
+
+}
+
+
+
 #patterns {
     width: 78%;
     height: auto;
@@ -145,20 +155,26 @@ p {
     font-family: National;
     font-weight: normal;
     line-height: 25px ;
-    margin-left: 240px;
+    margin-left: 220px;
 
 }
 
-button {
-    background-color: #EB6459; /* Green */
+.button {
+    margin-top: 2em ;
+    background-color: #EB6459; 
     border: none;
-    color: white;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
+    transition: all .3s ease ;
+    border-radius: 3px;
+}
 
+.button:hover {
+    background-color: #983e37;
+    color: white;
 }
 
 .image_container img { 
