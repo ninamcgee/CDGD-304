@@ -6,25 +6,25 @@
 
 body { 
     background: rgba(247,229,227,1); 
-/*    background: linear-gradient(to bottom, rgba(247,229,227,1) 48%,rgba(247,179,170,1) 99%);*/
+    /*    background: linear-gradient(to bottom, rgba(247,229,227,1) 48%,rgba(247,179,170,1) 99%);*/
     margin: 0; 
 }
 
 ul {
     list-style-type: none;
-        font-family: National;
+    font-family: National;
     font-weight: bold;
     color: black;
     line-height: 4; 
-    } 
+} 
 
 
 .sidenav {
-  height: 100%; 
-  width: 180px; /* Set the width of the sidebar */
-  position: fixed;
-  background-color: #EB6459;
-  padding-top: 20px;
+    height: 100%; 
+    width: 180px; /* Set the width of the sidebar */
+    position: fixed;
+    background-color: #EB6459;
+    padding-top: 20px;
 }
 
 
@@ -34,12 +34,12 @@ a:visited {
 }
 
 a:link {
-      text-decoration: none; 
+    text-decoration: none; 
     color: black; 
 }
 
 a:hover {
-      text-decoration: none; 
+    text-decoration: none; 
     color: rgba(247,229,227,1); 
 }
 
@@ -49,17 +49,45 @@ h1.page_title {
     color: black;
     /*    grid-column-start: 2 ;*/
     /*    grid-column-end: 3;*/
-        padding: 20px ;
+    padding: 20px ;
     margin-left: 200px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.project_descriptions {
+    font-family: National;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 1.7;
+    color: grey;
+    padding: 20px ;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 200px; 
+
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2.5px solid black;
+    margin: 1em 0;
+/*    margin-left: 220px;*/
+    width: 3%;
     
 }
+
 
 h2.nina {
     font-family: National;
     font-weight: bold;
     color: #EB6459;
     margin-top: 30px ;
-    margin-left: 230px;
+    margin-left: 250px;
     padding: 0 ;
     grid-column-start: 2 ;
     grid-column-end: 3 ;
@@ -85,17 +113,52 @@ h2.nina {
     object-fit: cover ;
     width: 100% ;
     margin-left: 220px;
-    
+
 }
+
+#branding_project {
+    width: 80%;
+    height: auto;
+    margin-left: 200px;
+
+}
+
+#patterns {
+    width: 78%;
+    height: auto;
+    margin-left: 210px;
+
+}
+
+#bard_logo {
+    width: 50%;
+    height: auto;
+    margin-left: 200px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+
 
 p { 
     font-family: National;
     font-weight: normal;
-    line-height: 20px ;
-    margin-left: 230px;
-    
+    line-height: 25px ;
+    margin-left: 200px;
+
 }
 
+button {
+  background-color: #EB6459; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
 
 .image_container img { 
     width: 100% ;
@@ -120,14 +183,22 @@ p {
 #grid_parent {
     display: grid; 
     grid-template-columns: 1fr ; 
-  
+
 }
 
 .bio_grid {
     display: grid; 
-    grid-template-columns: 1fr 1fr ; 
+    grid-template-columns: .5fr 1fr ; 
     grid-template-rows: 1fr ; 
     grid-column-gap: 20px; 
+}
+
+.final_logo_description {
+    display: grid; 
+    grid-template-columns: .5fr .5fr ; 
+    grid-template-rows: 1fr 1fr ; 
+    grid-column-gap: 20px; 
+    
 }
 
 #thumbnail_grid {
