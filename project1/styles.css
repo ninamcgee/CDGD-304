@@ -62,12 +62,9 @@ h1.page_title {
     font-size: 15px;
     line-height: 1.7;
     color: grey;
-    padding: 20px ;
-    margin-top: 0;
-    padding-top: 0;
-    margin-left: 200px; 
 
 }
+
 
 
 hr {
@@ -76,18 +73,18 @@ hr {
     border: 0;
     border-top: 2.5px solid black;
     margin: 1em 0;
-/*    margin-left: 220px;*/
+    /*    margin-left: 220px;*/
     width: 3%;
-    
+
 }
 
 
 h2.nina {
     font-family: National;
-    font-weight: bold;
+    font-weight: lighter;
     color: #EB6459;
     margin-top: 30px ;
-    margin-left: 250px;
+    margin-left: 240px;
     padding: 0 ;
     grid-column-start: 2 ;
     grid-column-end: 3 ;
@@ -134,29 +131,33 @@ h2.nina {
     width: 50%;
     height: auto;
     margin-left: 200px;
-    padding: 20px;
     margin-bottom: 40px;
 }
 
+#davinci {
+    width: 80%;
+    height: auto;
+    margin-left: 220px;
+}
 
 
 p { 
     font-family: National;
     font-weight: normal;
     line-height: 25px ;
-    margin-left: 200px;
+    margin-left: 240px;
 
 }
 
 button {
-  background-color: #EB6459; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
+    background-color: #EB6459; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 
 }
 
@@ -198,7 +199,7 @@ button {
     grid-template-columns: .5fr .5fr ; 
     grid-template-rows: 1fr 1fr ; 
     grid-column-gap: 20px; 
-    
+
 }
 
 #thumbnail_grid {
@@ -220,7 +221,6 @@ button {
 
 
 }
-
 
 
 
