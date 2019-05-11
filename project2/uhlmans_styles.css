@@ -1,0 +1,75 @@
+@font-face { 
+    font-family:National; 
+    src: url(fonts/National-Regular.otf); 
+    font-weight: 400 ; 
+}
+
+body { 
+    font-family: National; 
+    font-size: 20px; 
+    margin: 0; 
+}
+
+.uhlmans_logo {
+    
+    
+}
+
+
+body.homepage{
+    background-image: url(background.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.topnav_right {
+    float: right;
+    margin: 25px; 
+}
+
+.topnav_right a { 
+    color: #000000 ;
+    text-decoration: none;
+    padding: 25px;
+}
+
+/* White links on the homepage. */
+.white_links a {
+    color: #ffffff;    
+}
+
+a:hover {
+    color: #FBA7D4;  
+}
+
+.button {
+    margin-top: 15em ;
+    margin-left: 1.8em; 
+    color: #ffffff;
+    background-color: #FBA7D4; 
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    transition: all .3s ease ;
+    border-radius: 3px;
+}
+
+#grid_parent {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+
+}
+
+
+#thumbnail_grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 300px) ; /* Only for 2 rows. */
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px;  
+    padding: 20px; 
+    margin-left: 200px;
+}
