@@ -10,21 +10,18 @@ body {
     margin: 0; 
 }
 
-/*
-.image_container img { 
-   width: 300px;
-  height: 100px;
-    box-sizing: border-box;
-} 
-*/
+h1.page_title {
+    font-family: National;
+    font-weight: bold;
+    color: #FBA7D4;
+    /*    grid-column-start: 2 ;*/
+    /*    grid-column-end: 3;*/
+    padding: 20px ;
+    margin-left: 40px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
 
-/*
-.topnav_right img {
-    width: 10%;
-    height: 10%;
-    float: left;
 }
-*/
 
 body.homepage{
     background-image: url(background.jpg);
@@ -38,15 +35,44 @@ body.events{
     background-repeat: no-repeat;
 }
 
+body.cakes{
+    background-image: url(cakes.png);
+    background-size: 90%; 
+    background-repeat: no-repeat;
+
+}
+
 .topnav_right {
-    float: right;
-    margin: 25px; 
+    /*    float: right;*/
+    margin: 20px;
+    /*    grid-row-start: span / 3;*/
+    height: 71 ;
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr) ; 
+    align-items: center ;
+}
+
+.topnav_right p {
+    margin-top: 0 ;    
+    margin-bottom: 0 ;    
+}
+
+.topnav_right nav {
+    text-align: right ;
 }
 
 .topnav_right a { 
     color: #000000 ;
     text-decoration: none;
     padding: 25px;
+    margin: 0;
+}
+
+.topnav_right img {
+    width: 200px;
+    height: 71px;
+    /*    float: left;*/
+    /*    padding-left: 20px;*/
 }
 
 /* White links on the homepage. */
@@ -59,7 +85,7 @@ a:hover {
 }
 
 .button {
-    margin-top: 15em ;
+    margin-top: 12em ;
     margin-left: 1.8em; 
     color: #ffffff;
     background-color: #FBA7D4; 
@@ -104,16 +130,39 @@ a:hover {
 .calendar_button:hover {
     background-color: #A03FA2;
     color: white;
+    text-decoration: none;
 }
 
 .booking_button:hover {
     background-color: #4BB423;
     color: white;
+
+}
+
+.order_now {
+    margin-top: 1em ;
+    margin-left: 3em;
+    background-color: #FBA7D4; 
+    border: none;
+    padding: 11px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: all .3s ease ;
+    border-radius: 3px;
+}
+
+.order_now:hover {
+    background-color: #9DDB85;
+    color: white;
+
 }
 
 .button:hover {
     background-color: #A03FA2;
     color: white;
+
 }
 
 .image_container img { 
@@ -131,13 +180,10 @@ a:hover {
 
 .column img {
     margin-top: 20px;
-    vertical-align: middle;
+    /*    vertical-align: middle;*/
     object-fit: cover;
 
 }
-
-
-
 
 #grid_parent {
     display: grid; 
@@ -152,8 +198,154 @@ a:hover {
     grid-column-gap: 20px; 
     grid-row-gap: 40px;  
     padding: 20px; 
-    margin-top: 100px;
-/*    margin-left: 200px;*/
+    /*    margin-top: 100px;*/
+
+
+
+}
+
+ul {list-style-type: none;}
+
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 98%;
+    background: #FBA7D4;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 40;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    /*    padding-top: 20px;*/
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:15px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #FBA7D4;
+    color: white !important
+}
+.back_to_events_button {
+    float: left; 
+    margin-top: 0em ;
+    margin-left: 3em;
+    background-color: #9DDB85; 
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition: all .3s ease ;
+    border-radius: 3px;
+}
+
+.back_to_events_button:hover {
+    background-color: #4BB423;
+    color: white;
+
+}
+
+img {
+    width: 100%;
+    height: ;
+}
+
+.bio_image {
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;  
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+    margin-top: 30px ;
+}
+
+.bio_grid {
+    display: grid; 
+    grid-template-columns: .5fr 1fr ; 
+    grid-template-rows: 1fr ; 
+    grid-column-gap: 20px; 
+}
+p {
+    font-size: 18px; 
+    line-height: 28px; 
+}
+
+.three_column_grid {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px; 
+    grid-row-gap: 40px;  
+    padding: 60px; 
+    margin-top: 0px;
+
+}
+
+.cakes_paragraph {
+    font-size: 18px; 
+    line-height: 28px;
+    padding-left: 55px; 
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.cake_description {
+    font-size: 18px; 
+    line-height: 28px;
+    padding-left: 55px; 
+    margin-bottom: 0;
 }
 
 
